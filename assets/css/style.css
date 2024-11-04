@@ -10,37 +10,64 @@
 }
 
 body {
-<<<<<<< HEAD
   font-family: "poppins";
 }
 
 /*# sourceMappingURL=style.css.map */
-nav ul{
+/* rajout de display flex partout
+j'ai l'habitude de faire ça mais je ne sais pas si c'est bien */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Modification du nav pour avoir un background color et les nav li qui passent en blanc sans border lors du hover */
+nav {
+  background-color: #F4F2F0;
+  border-radius: 15px;
+  width: 350px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  /* margin "auto" pour centrer malgré la taille fixe */
+  margin: 20px auto;
 }
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 nav li{
-  border: 1px solid grey;
+  line-height: 30px;
   border-radius: 20px;
   padding: 0 10px;
-  background-color: rgb(214, 214, 214);
-  margin-bottom : 2rem;
-
+  /* Ajout transition + curseur */
+  transition: .3s ease;
+  cursor: pointer;
 }
+
+nav li:hover{
+  background-color: white;
+}
+
 nav li a{
   color: black;
   margin: 1rem;
 }
 
-nav li:hover{
-  background-color: white;
-  border: 1px solid rgb(214, 214, 214);
-}
 h1{
+  /* ajout margin top pour retrouver l'écart sur maquette avec nav */
+  margin-top: 5rem;
   margin-bottom: 2rem;
   text-align: center;
+  /* titre plus gros comme sur maquette */
+  font-size: 4.5rem;
 }
 h1 span{
   display: block;
@@ -54,10 +81,12 @@ main ul {
   
 }
 main ul li{
-  border: 1px solid grey;
+  /* Il n'y a pas de border sur la maquette */
+  /* border: 1px solid grey; */
   border-radius: 20px;
-  padding: 0 10px;
-  background-color: rgb(214, 214, 214);
+  padding: 10px;
+  /* récupération couleur comme sur maquette */
+  background-color: #F4F2F0;
   margin-bottom : 2rem;
   font-size: 0.7em;
   margin-right: 1rem;
@@ -68,7 +97,8 @@ main ul li a{
 
 main ul li:hover{
   background-color: white;
-  border: 1px solid rgb(214, 214, 214);
+  /* idem, pas de border sur la maquette */
+  /* border: 1px solid rgb(214, 214, 214); */
 
 }
 section{
@@ -121,9 +151,6 @@ footer{
     flex-direction: column;
   }
 }
-=======
-
-}
 
 /*# sourceMappingURL=style.css.map */
 div{
@@ -147,4 +174,3 @@ div img{
   }
 }
 
->>>>>>> photos
