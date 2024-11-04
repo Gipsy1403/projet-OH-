@@ -1,0 +1,11 @@
+@use "../abstract/variable" as v;
+@use "../abstract/mixins" as m;
+
+@font-face {
+      font-family: ;
+      src: url();
+}
+
+body{
+      font-family: $font;
+}
