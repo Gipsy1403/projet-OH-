@@ -108,3 +108,15 @@ footer{
   font-size: 0.6em;
   
 }
+
+@media screen and (max-width : 510px) {
+  main ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width : 400px) {
+  nav ul{
+    flex-direction: column;
+  }
+}
